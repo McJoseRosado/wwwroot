@@ -1,0 +1,225 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Blueprint.master.cs" Inherits="RenuOil.MasterPages.Blueprint" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="" />
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <title>Renuoil | Renu Your Green</title>
+    <!-- Stylesheets Start //-->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link href="~/include/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/include/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+    <link href="~/include/css/nivo-slider.css" rel="stylesheet" type="text/css" />
+    <link href="~/include/css/noscript.css" rel="stylesheet" type="text/css" media="screen,all" id="noscript" />
+    <!-- Stylesheets End //-->
+    <!-- Javascript Start //-->
+
+    <script type="text/javascript" src="/include/script/jquery.js"></script>
+
+    <script type="text/javascript" src="/include/script/jqueryslidemenu.js"></script>
+
+    <script type="text/javascript" src="/include/script/jquery.prettyPhoto.js"></script>
+
+    <script type="text/javascript" src="/include/script/jquery.nivo.slider.pack.js"></script>
+
+    <script type="text/javascript" src="/include/script/cufon.js"></script>
+
+    <script type="text/javascript" src="/include/script/fonts/ColaborateLight.js"></script>
+
+    <script type="text/javascript" src="/include/script/functions.js"></script>
+
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('#slider').nivoSlider({
+                effect: 'random',
+                pauseTime: 10000, // How long each slide will show
+                directionNav: true, // Next and Prev navigation
+                directionNavHide: true, // Only show on hover
+                controlNav: true // 1,2,3... navigation                
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        Cufon.replace('h1')('h2')('h3')('h4')('h5')('#myslidemenu a', { hover: 'true' })('#myslidemenu li li a', { textShadow: '1px 1px #ffffff', hover: 'true' })('a.button', { hover: 'true' })('.nivo-caption p');
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+        <div id="topwrapper">
+        </div>
+        <div id="mainwrapper">
+            <!-- Header Start -->
+            <div id="header">
+                <div class="center">
+                    <!-- Logo Start -->
+                    <div id="logo">
+                        <a href="Default.aspx">
+                            <img src="images/renu-logo.png" alt="logo" /></a>
+                    </div>
+                    <!-- Logo End -->
+                    <div id="headerright">
+                        <!-- Menu Navigation Start -->
+                        <div id="mainmenu">
+                            <div id="myslidemenu" class="jqueryslidemenu">
+                                <ul>
+                                    <li><a id="lnkHome" runat="server" href="/Default.aspx">Home</a> </li>
+                                    <li><a id="lnkServices" runat="server" href="/OurServices.aspx">Services</a>
+                                    </li>                                    
+                                    <li><a id="lnkAboutUs" runat="server" href="/AboutUs.aspx">About</a>
+                                    </li>
+                                    <li><a id="lnkPhilanthropy" runat="server" href="/Philanthropy.aspx">Philanthropy</a></li>
+                                    <li><a id="lnkFAQ" runat="server" href="/FAQ.aspx">FAQ</a>
+                                    </li>                                    
+                                    <li><a id="lnkContactUs" runat="server" href="/ContactUs.aspx">Contact</a></li>
+                                    <li><a id="lnkLogin" runat="server" href="/Login.aspx">Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Menu Navigation End -->
+                    </div>
+                </div>
+            </div>
+            <!-- Header End  -->
+            <!-- Slideshow Wrapper -->
+            <div id="slide-wrapper">
+                <!-- Slideshow Start -->
+                <asp:ContentPlaceHolder ID="slideshowContent" runat="server"></asp:ContentPlaceHolder>
+                <!-- Slideshow End  -->
+            </div>
+            <!-- Slideshow Wrapper End -->
+            <div class="clear">
+            </div>
+            <!-- Features Content -->
+            <div id="featuresbox">
+                <asp:ContentPlaceHolder ID="featuresContent" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <!-- Features Content End -->
+            <div class="clear">
+            </div>
+            <div class="center">
+                <!-- Main Content -->
+                <div class="maincontent">
+                    <asp:ContentPlaceHolder ID="mainContent" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <!-- Main Content End -->
+                <!-- Sidebar -->
+                <div id="sidebar">
+                    <!-- Sidebar Box -->
+                    <asp:ContentPlaceHolder ID="sideBarContent" runat="server"></asp:ContentPlaceHolder>
+                    <!-- Sidebar Box End -->
+                </div>
+                <!-- Sidebar End -->
+                <div class="clear">
+                </div>
+                <!-- Bottom Content -->
+                <div id="bottomcontent">
+                    <asp:ContentPlaceHolder ID="bottomContent" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <!-- Bottom Content End-->  
+                <!-- mainContent2 Content -->
+                <div id="maincontent2">
+                    <asp:ContentPlaceHolder ID="normalContent2" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <!-- mainContent2 Content End-->                
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+        <!-- Footer Start -->
+        <div id="bottomwrapper">
+        </div>
+        <div id="footer">
+            <asp:ContentPlaceHolder ID="footerContent" runat="server"></asp:ContentPlaceHolder>
+            <!-- Footer Box #1 -->
+            <div class="footerbox">
+                <h4>We Customize Recycling Programs For:</h4>
+                <ul>
+                    <li>Aluminum / Metals</li>
+                    <li>Brown Grease / Waste to Energy</li>
+                    <li>Cardboard / Paper</li>
+                    <li>Food / Organics</li>
+                    <li>Glass</li>
+                    <li>Plastics</li>
+                    <li>Textiles</li>
+                    <li>Universal Waste</li>
+                    <li>Yellow Grease / Cooking Oil</li>
+                </ul>
+            </div>
+            <!-- Footer Box #2 -->
+<%--            <div class="footerbox">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Integer eu lacus</a></li>
+                    <li><a href="#">mauris hendrerit</a></li>
+                    <li><a href="#">egestas imperdiet</a></li>
+                    <li><a href="#">placerat ullam dolor </a></li>
+                    <li><a href="#">lectus sollicitudin</a></li>
+                </ul>
+            </div>--%>
+            <!-- Footer Box #3 -->
+            <div class="footerbox">
+                <h4>Our Address</h4>
+                <ul class="addresslist">
+                    <li>P.O. Box 93453<br />
+                        Las Vegas, NV 89193 </li>
+                    <li><strong>Phone </strong>: 702 263 0078</li>
+                    <li><strong>Email </strong>: <a href="mailto:info@gogreenwithrenuoil.com">info@gogreenwithrenuoil.com</a></li>
+                    <li><strong>Site </strong>: <a href="http://www.gogreenwithrenuoil.com">http://www.gogreenwithrenuoil.com</a></li>
+                </ul>
+            </div>
+            <!-- Footer Box #4 -->
+            <div class="footerbox box-last">
+                <a href="Default.aspx">
+                    <img src="images/renu-logo.png" alt="logo" class="aligncenter" /></a>
+                <p></p>
+                <ul class="social-links">
+                    <li><a href="#">
+                        <img src="images/linkedin.png" alt="Linkedin" /></a></li>
+                    <li><a href="https://twitter.com/renuoil">
+                        <img src="images/twitter.png" alt="Twitter" /></a></li>
+                    <li><a href="https://www.facebook.com/Renu-Oil-of-America-108615345887395/?ref=page_internal">
+                        <img src="images/facebook.png" alt="Facebook" /></a></li>
+                    <li><a href="#">
+                        <img src="images/flickr.png" alt="Flickr" /></a></li>
+                    <li><a href="#">
+                        <img src="images/feed.png" alt="RSS" /></a></li>
+                </ul>
+            </div>
+            <div class="clear">
+            </div>
+            <div class="bottom">
+                <!-- Footer Menu -->
+                <div class="footermenu">
+                    <ul>
+                        <li><a href="/Default.aspx">Home</a></li>
+                        <li><a href="/AboutUs.aspx">About</a></li>
+                        <li><a href="/OurServices.aspx">Services</a></li>
+                        <li><a href="/ContactUs.aspx">Contact</a></li>
+                        <li><a href="/OurCompany.aspx">Our Company</a></li>
+                        <%--<li><a href="http://www.reliantwebservices.com">Site by Reliant Programming and Web Services</a></li>--%>
+                    </ul>
+                </div>
+                <!-- Footer Menu End -->
+                <!-- Site Copyright -->
+                <div class="copyright">
+                    <p>&copy; 2016 - <a href="http://gogreenwithrenuoil.com">RenuOil of America</a></p>
+                </div>
+                <!-- Site Copyright End -->
+            </div>
+        </div>
+        <!-- Footer End  -->
+    </div>
+
+    <script type="text/javascript">        $('#noscript').remove();</script>
+
+    </form>
+</body>
+</html>

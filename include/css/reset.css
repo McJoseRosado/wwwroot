@@ -1,0 +1,322 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+	background-color: #2888BF;
+	background-image: url(/images/pattern/mozaic1.png);
+	background-repeat: repeat;
+	font-family: arial, verdana, tahoma, helvetica;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+li {
+	font-size:12px;
+}
+textarea {
+	resize:none;
+}
+/* remember to define focus styles! */
+
+
+/* remember to highlight inserts somehow! */
+
+
+/* tables still need 'cellspacing="0"' in the markup */
+.repeater {
+	font-size:11px;
+	padding:5px;
+	border-spacing:2px;
+	color:#666666;
+	border:solid 1px #EAEAEA;
+}
+.repeater th {
+	background:#EAEAEA;
+	padding:5px;
+}
+.repeater td a, a:link, a:visited  {
+	color:#555555; 
+	text-decoration:underline;
+	border:none;
+}
+.repeater td a:hover  {
+	color:#007BA8;
+	text-decoration:underline;
+}
+.repeater td {
+	padding:5px;
+
+}
+/* Labels */
+.label {
+	font-size:12px;
+	clear:left;
+	padding:5px;
+	border-spacing:2px;
+	color:#666666;
+	float:left;
+	margin:5px;
+	width:120px;
+}
+.smallLabel {
+	font-size:12px;
+	clear:left;
+	padding:5px;
+	border-spacing:2px;
+	color:#666666;
+	float:left;
+	margin:5px;
+}
+.longlabel {
+	font-size:12px;
+	clear:left;
+	padding:1px;
+	border-spacing:2px;
+	color:#666666;
+	float:left;
+	margin:5px;
+	width:300px;
+}
+select {
+	float:left;
+	font-size:12px;
+	color:#666666;
+	margin:2px;
+	padding:5px;
+	border:solid 1px #D8D8D8;
+}
+hr {
+	color:#007BA8;
+	height:1px;
+}
+.dd {
+	clear:both;
+	font-size:12px;
+	color:#666666;
+}
+/* Textbox */
+.textbox {
+	font-size:12px;
+	padding:5px;
+	border-spacing:2px;
+	color:#666666;
+	width:450px;
+	margin:2px;
+	float:left;
+	font-family: arial, verdana, tahoma, helvetica;
+	border:solid 1px #D8D8D8;
+}
+.sidebarTextbox {
+	font-size:12px;
+	padding:5px;
+	border-spacing:2px;
+	color:#666666;
+	width:180px;
+	margin:2px;
+	float:left;
+	font-family: arial, verdana, tahoma, helvetica;
+	border:solid 1px #D8D8D8;
+	overflow:auto;
+}
+.moneytextbox {
+	font-size:12px;
+	padding:2px;
+	border-spacing:2px;
+	color:#000000;
+	width:241px;
+	margin:2px;
+	float:left;
+	font-family: arial, verdana, tahoma, helvetica;
+	vertical-align:middle;
+	text-align:right;
+	border:solid 1px #D8D8D8;
+	background-color:#ffffff;
+}
+.quantityTextBox {
+	font-size:12px;
+	padding:2px;
+	border-spacing:2px;
+	color:#000000;
+	width:50px;
+	margin:2px;
+	font-family: arial, verdana, tahoma, helvetica;
+	vertical-align:middle;
+	text-align:right;
+	border:solid 1px #D8D8D8;
+	background-color:#ffffff;
+}
+.gridText {
+	font-size:12px;
+	padding:2px;
+	color:#666666;
+	font-family: arial, verdana, tahoma, helvetica;
+	border:solid 1px #666666;
+	vertical-align:middle;
+}
+.gray {
+	background-color:#E8E8E8;
+}
+.gridTextItalic {
+	font-size:12px;
+	font-style:italic;
+	padding:5px;
+	color:#666666;
+	font-family: arial, verdana, tahoma, helvetica;
+	border:solid 1px #666666;
+	vertical-align:middle;
+}
+.gridHeader {
+	font-family: arial, verdana, tahoma, helvetica;
+	font-size:12px;
+	margin-bottom:5px;
+	color:#007BA8;
+}
+.gridtextbox {
+	font-size:12px;
+	padding:2px;
+	border-spacing:2px;
+	color:#666666;
+	width:241px;
+	margin:2px;
+	float:left;
+	font-family: arial, verdana, tahoma, helvetica;
+	vertical-align:middle;
+	text-align:left;
+	border:solid 1px #D8D8D8;
+}
+.lightgray {
+	background-color:#F8F8F8;
+}
+.italic {
+	font-style:italic;
+}
+.title {
+	color:#007BA8;
+	font-size:18px;
+	line-height:16px;
+	font-family: arial, verdana, tahoma, helvetica;
+	vertical-align:middle;
+}
+.dropdown {
+	vertical-align:middle;
+	float:left;
+}
+.delete {
+	background:url("../../images/cross_circle.png") no-repeat;
+	width:15px;
+	border:none;
+	cursor: pointer;
+}
+.list li {
+	font-size:12px;
+	padding:2px;
+}
+.linkButton {
+	font-family: arial, verdana, tahoma, helvetica;
+	font-size:12px;
+	margin:2px;
+	padding:5px;
+	float:left;
+}
+.radTimePicker {
+	font-size:12px;
+	padding:5px;
+	border-spacing:2px;
+	color:#666666;
+	margin:2px;
+	float:left;
+	font-family: arial, verdana, tahoma, helvetica;
+}
+.radDatePicker {
+	font-size:12px;
+	padding:5px;
+	border-spacing:2px;
+	color:#666666;
+	margin:2px;
+	float:left;
+	font-family: arial, verdana, tahoma, helvetica;
+}
+.checkbox {
+    float: left;
+    padding: 5px;
+    margin: 2px; 
+}
+.radDatePicker text {
+	color:#666666;
+}
+.status-floater {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 3em 3em 0 0;
+	padding: 10px;
+	background: #fff;
+	z-index: 9999;
+	border: 2px solid #ccc;
+}
+.multilineTextbox {
+	font-size:12px;
+	padding:2px;
+	border-spacing:2px;
+	color:#666666;
+	margin:2px;
+	float:left;
+	font-family: arial, verdana, tahoma, helvetica;
+	vertical-align:middle;
+	text-align:left;
+	border:solid 1px #D8D8D8;
+
+}
+.signature {
+	width:250;
+	height:60;
+	float:left;
+}
+.employeeDropdown {
+	width:100px;
+	float:none;
+}
+.workOrderDropdown {
+	float:none;
+}
+.accountList {
+	font-size:12px;
+	padding:5px;
+	border-spacing:2px;
+	color:#666666;
+	width:450px;
+	margin:2px;
+	float:left;
+	font-family: arial, verdana, tahoma, helvetica;
+	border:solid 1px #D8D8D8;
+}
+.accountList td {
+	padding:2px;
+	width: 200px;
+}

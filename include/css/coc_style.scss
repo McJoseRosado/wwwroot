@@ -1,0 +1,170 @@
+﻿.coc_body {
+	background-color: #2888BF;
+	background-image: url(../../images/pattern/mozaic1.png);
+	background-repeat: repeat;
+	font-family: arial, verdana, tahoma, helvetica;
+	.navbar-brand{height:auto;}
+	.navbar .navbar-right li{
+		color:gray;
+		@media (min-width: 768px) {
+			padding-top:20px;
+		}
+	}
+	
+	//all pages
+	.main_row{
+		background:#FFF;
+		padding:15px 10px 25px;
+		.linkButton{
+			margin:10px 0px 5px;
+			min-height:80px;
+			padding-top:20px;
+		}
+		form .form-group{
+			margin:10px 0px;
+		}
+
+		.backToHome_button{
+			margin-top:-5px;
+			margin-right:10px;
+		}
+		#new_bale_alert{display:none;}
+	}
+
+	//edit pages
+	#coc_edit_dock_page, #coc_edit_bale_page, #coc_edit_load_page, #coc_receiverView_page, #coc_existing_loads_page{	
+
+		.confirmDelete_row, .confirmSave_row, .alert{display:none;}
+
+		.editOrDelete_row, .confirmDelete_row,  .confirmSave_row{
+			margin:0px;
+			button{
+				width:70px;
+				float:left;
+				margin-right:10px;
+
+				@media (min-width: 768px) {margin-top:10px;}
+				@media (min-width: 992px) {margin-top:10px;}
+			}
+		}
+
+		.edit_p{
+			padding:10px 0px 0px 10px;
+		}
+
+		.editLoad_checkbox{width:60px;height:23px;}
+
+		.crud_td .row{
+			margin-bottom: 10px;
+		}		
+
+		.form-control{
+			min-width:200px;
+			width:100%; 
+			overflow:hidden
+		}
+	}
+
+	//temp fix for edit dock page buttons
+	#coc_edit_dock_page, #coc_edit_load_page{
+		.editOrDelete_row, .confirmDelete_row,  .confirmSave_row{
+			button{
+				@media (min-width: 768px) {margin-top:0px;}
+				@media (min-width: 992px) {margin-top:0px;}
+			}
+		}
+	}
+
+	//coc_receiverView_page
+	#coc_receiverView_page{
+		.childRows {
+			.containerDiv{
+				max-height:300px;
+				overflow-y:scroll;
+			}
+		}
+		.table-responsive{
+			min-width:1200px;
+			table{
+				table-layout:fixed;
+			}
+		}
+		.childTableWrapper{
+			overflow:scroll;
+		}
+		
+		.form-control{
+			min-width:0px;
+			width:100%; 
+			overflow:hidden
+		}
+	}
+
+	//dataTable fixes
+	.dataTable{
+
+	}
+	.paginate_button{
+		padding:0px !important;
+		border:0px !important;
+	}
+}
+
+/* .modal-transparent */
+
+.modal-transparent {
+  background: transparent;
+}
+.modal-transparent .modal-content {
+  background: transparent;
+}
+.modal-backdrop.modal-backdrop-transparent {
+  background: #ffffff;
+}
+.modal-backdrop.modal-backdrop-transparent.in {
+  opacity: .9;
+  filter: alpha(opacity=90);
+}
+
+/* .modal-fullscreen */
+
+.modal-fullscreen {
+  background: transparent;
+}
+.modal-fullscreen .modal-content {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.modal-backdrop.modal-backdrop-fullscreen {
+  background: #ffffff;
+}
+.modal-backdrop.modal-backdrop-fullscreen.in {
+  opacity: .97;
+  filter: alpha(opacity=97);
+}
+
+/* .modal-fullscreen size: we use Bootstrap media query breakpoints */
+
+.modal-fullscreen .modal-dialog {
+  margin: 50px 0 0 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .modal-fullscreen .modal-dialog {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-fullscreen .modal-dialog {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-fullscreen .modal-dialog {
+     width: 1170px;
+  }
+}
