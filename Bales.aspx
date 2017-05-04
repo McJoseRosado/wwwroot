@@ -16,6 +16,17 @@
 </asp:Content>
 <asp:Content ID="Content6" ContentPlaceHolderID="mainContent2" runat="server">
     <img src="http://i.imgur.com/0Ra2b99.png"/>
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+        <Columns>
+            <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date"></asp:BoundField>
+            <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name"></asp:BoundField>
+            <asp:BoundField DataField="Dock Name" HeaderText="Dock Name" SortExpression="Dock Name"></asp:BoundField>
+            <asp:BoundField DataField="Commodity" HeaderText="Commodity" SortExpression="Commodity"></asp:BoundField>
+            <asp:BoundField DataField="Initial Weight" HeaderText="Initial Weight" SortExpression="Initial Weight"></asp:BoundField>
+            <asp:BoundField DataField="Bale Number" HeaderText="Bale Number" SortExpression="Bale Number"></asp:BoundField>
+        </Columns>
+    </asp:GridView>
+    <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT * FROM [Bales]"></asp:SqlDataSource>
 </asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="sideBarContent2" runat="server">
 </asp:Content>

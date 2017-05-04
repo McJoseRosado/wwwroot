@@ -53,14 +53,14 @@
             <div id="schedulesNoAccessBox" runat="server" visible="false" class="boximg2">
                 <img src="images/noaccess.jpg" class="boximg-pad" alt="" /></div>
         </div>
-        <div class="mainbox2 box-last">
+      <%--   <div class="mainbox2 box-last">
             <h4 class="title">COC</h4>
             <div id="usersBox" runat="server" class="boximg2">
                 <a href="COC.aspx">
                     <img src="images/service-img6.jpg" class="boximg-pad" alt="" /></a></div>
             <div id="usersNoAccessBox" runat="server" visible="false" class="boximg2">
                 <img src="images/noaccess.jpg" class="boximg-pad" alt="" /></div>
-        </div>
+        </div> --%>
         <div class="spacer">
         </div>
         <div class="mainbox2 box">
