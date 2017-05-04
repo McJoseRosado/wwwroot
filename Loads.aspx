@@ -22,7 +22,7 @@
     <div>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT * FROM [Load]">
         </asp:SqlDataSource>
-<%-        <telerik:RadGrid ID="RGExisitingLoads" runat="server" OnNeedDataSource="RGExisitingLoads_NeedDataSource" AutoGenerateColumns="false" AllowSorting="true" AllowFilteringByColumn="true" AllowMultiRowEdit="false" AutoGenerateEditColumn="true" OnUpdateCommand="RGExisitingLoads_UpdateCommand">
+<%--        <telerik:RadGrid ID="RGExisitingLoads" runat="server" OnNeedDataSource="RGExisitingLoads_NeedDataSource" AutoGenerateColumns="false" AllowSorting="true" AllowFilteringByColumn="true" AllowMultiRowEdit="false" AutoGenerateEditColumn="true" OnUpdateCommand="RGExisitingLoads_UpdateCommand">
             <MasterTableView TableLayout="Auto" EditMode="InPlace" DataKeyNames="LoadID">
                 <Columns>
                     <telerik:GridBoundColumn DataField="LoadID" HeaderText="LoadId" AllowSorting="true" AllowFiltering="true"
