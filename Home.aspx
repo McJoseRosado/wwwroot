@@ -53,23 +53,15 @@
             <div id="schedulesNoAccessBox" runat="server" visible="false" class="boximg2">
                 <img src="images/noaccess.jpg" class="boximg-pad" alt="" /></div>
         </div>
-      <%--   <div class="mainbox2 box-last">
+         <div class="mainbox2 box-last">
             <h4 class="title">COC</h4>
             <div id="usersBox" runat="server" class="boximg2">
-                <a href="COC.aspx">
+                <a href="COC3.aspx">
                     <img src="images/service-img6.jpg" class="boximg-pad" alt="" /></a></div>
             <div id="usersNoAccessBox" runat="server" visible="false" class="boximg2">
                 <img src="images/noaccess.jpg" class="boximg-pad" alt="" /></div>
-        </div> --%>
-        <div class="spacer">
         </div>
-        <div class="mainbox2 box">
-            <h4 class="title">COC2</h4>
-            <div id="Div5" runat="server" class="boximg2">
-                <a href="COC3.aspx">
-                    <img src="images/service-img6.jpg" class="boximg-pad" alt="" /></a></div>
-            <div id="Div6" runat="server" visible="false" class="boximg2">
-                <img src="images/noaccess.jpg" class="boximg-pad" alt="" /></div>
+        <div class="spacer">
         </div>
         <div class="mainbox2 box">
             <h4 class="title">Settings</h4>

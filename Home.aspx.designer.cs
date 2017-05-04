@@ -76,22 +76,22 @@ namespace RenuOil {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl schedulesNoAccessBox;
         
         /// <summary>
-        /// Div5 control.
+        /// usersBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Div5;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl usersBox;
         
         /// <summary>
-        /// Div6 control.
+        /// usersNoAccessBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Div6;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl usersNoAccessBox;
         
         /// <summary>
         /// settingsBox control.
