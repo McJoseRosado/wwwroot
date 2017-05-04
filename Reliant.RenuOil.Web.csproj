@@ -105,9 +105,37 @@
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Web.Mobile" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="Telerik.Web.UI, Version=2009.1.402.35, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+    <Reference Include="Telerik.Web.Spreadsheet, Version=2017.1.215.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\References\Telerik.Web.UI.dll</HintPath>
+      <HintPath>lib\RCAJAX\2017.1.228.45.Trial\AdditionalLibraries\Bin45\Telerik.Web.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2017.1.228.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\RCAJAX\2017.1.228.45.Trial\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2017.1.228.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\RCAJAX\2017.1.228.45.Trial\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2017.1.213.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\RCAJAX\2017.1.228.45.Trial\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow, Version=2017.1.213.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\RCAJAX\2017.1.228.45.Trial\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Flow.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet, Version=2017.1.213.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\RCAJAX\2017.1.228.45.Trial\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml, Version=2017.1.213.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\RCAJAX\2017.1.228.45.Trial\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip, Version=2017.1.213.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\RCAJAX\2017.1.228.45.Trial\AdditionalLibraries\Bin45\Telerik.Windows.Zip.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -126,8 +154,15 @@
     <Content Include="bin\SD.LLBLGen.Pro.LinqSupportClasses.NET35.dll" />
     <Content Include="bin\SD.LLBLGen.Pro.ORMSupportClasses.NET20.dll" />
     <Content Include="bin\Siberix.ReportWriter.dll" />
+    <Content Include="bin\Telerik.Web.Spreadsheet.dll" />
     <Content Include="bin\Telerik.Web.UI.dll" />
+    <Content Include="bin\Telerik.Web.UI.Skins.dll" />
     <Content Include="bin\Telerik.Web.UI.xml" />
+    <Content Include="bin\Telerik.Windows.Documents.Core.dll" />
+    <Content Include="bin\Telerik.Windows.Documents.Flow.dll" />
+    <Content Include="bin\Telerik.Windows.Documents.Spreadsheet.dll" />
+    <Content Include="bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll" />
+    <Content Include="bin\Telerik.Windows.Zip.dll" />
     <Content Include="COC.aspx" />
     <Content Include="COC3.aspx" />
     <Content Include="DockWorkers.aspx" />
@@ -195,6 +230,7 @@
     <Content Include="ReceiverViewEditBales.aspx" />
     <Content Include="RecycleTypes.aspx" />
     <Content Include="Recycling.aspx" />
+    <Content Include="RecyclingAccounts.aspx" />
     <Content Include="refactored pages\_WorkOrders.aspx" />
     <Content Include="Reliant.RenuOil.DAL\bin\Debug\Reliant.RenuOil.DAL.dll" />
     <Content Include="Reliant.RenuOil.DAL\bin\Debug\Reliant.RenuOil.DAL.pdb" />
@@ -577,6 +613,13 @@
     </Compile>
     <Compile Include="Recycling.aspx.designer.cs">
       <DependentUpon>Recycling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecyclingAccounts.aspx.cs">
+      <DependentUpon>RecyclingAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecyclingAccounts.aspx.designer.cs">
+      <DependentUpon>RecyclingAccounts.aspx</DependentUpon>
     </Compile>
     <Compile Include="refactored pages\_WorkOrders.aspx.cs">
       <DependentUpon>_WorkOrders.aspx</DependentUpon>
