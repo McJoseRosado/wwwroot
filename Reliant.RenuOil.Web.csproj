@@ -223,6 +223,7 @@
     <Content Include="Philanthropy.aspx" />
     <Content Include="Production.aspx" />
     <Content Include="RadGridExportWebForm.aspx" />
+    <Content Include="RadGridExportWebForm1.aspx" />
     <Content Include="Rebates.aspx" />
     <Content Include="RebateTypes.aspx" />
     <Content Include="Receiver.aspx" />
