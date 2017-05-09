@@ -6,8 +6,7 @@
     <img src="images/page-heading1.jpg" alt="" />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="mainContent" runat="server">
-    
-    <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT * FROM [Bales]"></asp:SqlDataSource>
+
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="sideBarContent" runat="server">
 </asp:Content>

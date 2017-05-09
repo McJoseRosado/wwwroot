@@ -222,6 +222,7 @@
     <Content Include="NewTrip.aspx" />
     <Content Include="Philanthropy.aspx" />
     <Content Include="Production.aspx" />
+    <Content Include="RadEditorWebForm.aspx" />
     <Content Include="RadGridExportWebForm.aspx" />
     <Content Include="RadGridExportWebForm1.aspx" />
     <Content Include="Rebates.aspx" />
@@ -559,6 +560,13 @@
       <DependentUpon>Production.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RadEditorWebForm.aspx.cs">
+      <DependentUpon>RadEditorWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RadEditorWebForm.aspx.designer.cs">
+      <DependentUpon>RadEditorWebForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="RadGridExportWebForm.aspx.cs">
       <DependentUpon>RadGridExportWebForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
