@@ -16,7 +16,7 @@
 </asp:Content>
 <asp:Content ID="Content6" ContentPlaceHolderID="mainContent2" runat="server">
     <img src="http://i.imgur.com/0Ra2b99.png"/>
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
         <Columns>
             <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date"></asp:BoundField>
             <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name"></asp:BoundField>
@@ -25,6 +25,23 @@
             <asp:BoundField DataField="Initial Weight" HeaderText="Initial Weight" SortExpression="Initial Weight"></asp:BoundField>
             <asp:BoundField DataField="Bale Number" HeaderText="Bale Number" SortExpression="Bale Number"></asp:BoundField>
         </Columns>
+        <FooterStyle BackColor="White" ForeColor="#333333"></FooterStyle>
+
+        <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White"></HeaderStyle>
+
+        <PagerStyle HorizontalAlign="Center" BackColor="#336666" ForeColor="White"></PagerStyle>
+
+        <RowStyle BackColor="White" ForeColor="#333333"></RowStyle>
+
+        <SelectedRowStyle BackColor="#339966" Font-Bold="True" ForeColor="White"></SelectedRowStyle>
+
+        <SortedAscendingCellStyle BackColor="#F7F7F7"></SortedAscendingCellStyle>
+
+        <SortedAscendingHeaderStyle BackColor="#487575"></SortedAscendingHeaderStyle>
+
+        <SortedDescendingCellStyle BackColor="#E5E5E5"></SortedDescendingCellStyle>
+
+        <SortedDescendingHeaderStyle BackColor="#275353"></SortedDescendingHeaderStyle>
     </asp:GridView>
     <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT * FROM [Bales]"></asp:SqlDataSource>
 </asp:Content>
