@@ -258,9 +258,6 @@
     <Content Include="NewTrip.aspx" />
     <Content Include="Philanthropy.aspx" />
     <Content Include="Production.aspx" />
-    <Content Include="RadEditorWebForm.aspx" />
-    <Content Include="RadGridExportWebForm.aspx" />
-    <Content Include="RadGridExportWebForm1.aspx" />
     <Content Include="Rebates.aspx" />
     <Content Include="RebateTypes.aspx" />
     <Content Include="Receiver.aspx" />
@@ -373,7 +370,6 @@
     </Compile>
     <Compile Include="DockWorkers.aspx.cs">
       <DependentUpon>DockWorkers.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DockWorkers.aspx.designer.cs">
       <DependentUpon>DockWorkers.aspx</DependentUpon>
@@ -596,20 +592,6 @@
       <DependentUpon>Production.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RadEditorWebForm.aspx.cs">
-      <DependentUpon>RadEditorWebForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RadEditorWebForm.aspx.designer.cs">
-      <DependentUpon>RadEditorWebForm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="RadGridExportWebForm.aspx.cs">
-      <DependentUpon>RadGridExportWebForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RadGridExportWebForm.aspx.designer.cs">
-      <DependentUpon>RadGridExportWebForm.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Rebates.aspx.cs">
       <DependentUpon>Rebates.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

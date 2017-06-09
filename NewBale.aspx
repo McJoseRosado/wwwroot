@@ -6,11 +6,8 @@
     <img src="images/page-heading1.jpg" alt="" />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="mainContent" runat="server">
-    <telerik:RadGrid ID="RadGrid1" runat="server"></telerik:RadGrid>
-</asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="sideBarContent" runat="server">
-</asp:Content>
-<asp:Content ID="Content5" ContentPlaceHolderID="bottomContent" runat="server">
+
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT * FROM [Bales]"></asp:SqlDataSource>
 </asp:Content>
 <asp:Content ID="Content6" ContentPlaceHolderID="mainContent2" runat="server">
 </asp:Content>
